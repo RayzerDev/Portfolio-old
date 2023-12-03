@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{
+    background-color: #F5F5F5;
+}
+*{
+    font-size: 1.02em;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    color: #171821;
+}
+nav{
+    margin: 10px auto;
+    width: 85%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+}
+
+nav > div > a {
+    margin-right: auto;
+    margin-left: 2em;
+    width: 150px;
+}
+
+#nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li > img {
+    width: 50px;
+}
+
+li {
+    margin: auto 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li, a {
+    text-decoration: none;
+}
+
+#logo{
+    width: 150px;
+}
+
+
+h1,h2{
+    font-size: 4em;
+    color: #172243;
+    animation: text-pop-up-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+h2{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+h3{
+    color: #172243;
+    font-size: 1.3em;
+}
+#main{
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 8vh;
+    display:flex;
+    width: 80%;
+}
+#main > img{
+    width: 40%;
+}
+@keyframes text-pop-up-right {
+    0% {
+      transform: translateX(50px);
+      transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+    100% {
+      transform: translateX(0px);
+      transform-origin: 50% 50%;
+      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: auto;
+}
+.baniere{
+    justify-content:space-between;
+    align-items: center;
+    margin: auto 5%;
+    margin: 1em 2em;
+}
+#row-content > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 0.8em;
+}
+hr{
+    margin: 1em 0;
+}
+.info{
+    display: flex;
+    margin-right: 10px;
+}
+.info > img{
+    width: 20px;
+    margin-right: 5px;
+}
+#row-content > div > :last-child{
+    margin-left: auto;
+}
+#head > :last-child{
+    margin-left: auto;
+    background-color: rgb(56, 131, 109);
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#card{
+    margin: 0 10px 30px 30px;
+}
+#card > img{
+    width: 100px;
+    height: px;
+}
+#card > p{
+    text-align: center;
+    margin: auto;
+}
+
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#text{
+    background-color: white;
+    padding: 10px;
+    border-radius: 0 0 10% 10%;
+}
+#text > *{
+    margin: 10px 0 0;
+}
+#text > p, strong{
+    font-size: 1rem;
+}
+#project{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 30px 30px;
+    width: 23vw;
+    border-radius: 50%;
+}
+#project > img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 10% 10% 0 0;
+}
+#links{
+    display: flex;
+    justify-content: space-between;
+}
+#link{
+    display: flex;
+}
+#link > img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+#link > a{
+    font-size: 1rem;
+    text-decoration:underline;
+}
+#infos{
+    margin: auto;
+    margin-top: 8vh;
+}
