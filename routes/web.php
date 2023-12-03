@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PortfolioController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::controller(PortfolioController::class) -> group(function (){
+    Route::get('portfolio', 'index')->name('portfolio');
+    Route::get('portfolio/a-propos', 'about')->name('portfolio.about');
+    Route::get('portfolio/projets', 'projects')->name('portfolio.projects');
+    Route::get('portfolio/competences', 'skills')->name('portfolio.skills');
+    Route::get('portfolio/contact', 'contact')->name('portfolio.contact');
 });
