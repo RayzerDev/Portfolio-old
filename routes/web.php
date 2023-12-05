@@ -16,7 +16,7 @@ use App\Http\Controllers\PortfolioController;
 Route::controller(PortfolioController::class) -> group(function (){
     Route::get('portfolio', 'index')->name('portfolio');
     Route::get('portfolio/a-propos', 'about')->name('portfolio.about');
-    Route::get('portfolio/projets', 'projects')->name('portfolio.projects');
+    Route::get('portfolio/projets', 'projets')->name('portfolio.projets');
     Route::get('portfolio/competences', 'skills')->name('portfolio.skills');
     Route::get('portfolio/contact', 'contact')->name('portfolio.contact');
 });

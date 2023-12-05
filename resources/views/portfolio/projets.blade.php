@@ -3,14 +3,14 @@
         @if(!empty($categories))
             @foreach($categories as $categorie)
             <div class=baniere>
-                @if(!empty($projetsScolaire))
-                <h2>$categorie</h2>
+                @if(!empty($projets))
+                <h2>{{$categorie}}</h2>
                 <div id="projects">
-        @foreach($projetsScolaire[$categorie] as $projet)
+        @foreach($projets[$categorie] as $projet)
                     <div id="project">
-                        <img src={{$projet["image"]}}>
+                        <img src={{"storage" . $projet["image"]}}>
                         <div id="text">
-                            <h3>{{$projet["name"]}}</h3>
+                            <h3>{{$projet["nom"]}}</h3>
                             <p>{{$projet["description"]}}</p>
                             <p><strong>Technos :</strong>{{$projet["techs"]}}</p>
                             <div id="links">
