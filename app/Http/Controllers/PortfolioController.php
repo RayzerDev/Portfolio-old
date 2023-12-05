@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use http\Env;
 use Illuminate\Support\Facades\Http;
 
 class PortfolioController extends Controller
@@ -19,8 +20,9 @@ class PortfolioController extends Controller
      */
     public function about()
     {
-        $experiences = [];
-        $diplomes = [];
+        $urlAPI = env("API_PORTFOLIO_URL");
+        $experiences = Http::get($urlAPI . "experiences")->json()["products"];
+        $diplomes = Http::get($urlAPI . "diplomes")->json()["products"];
         return view('portfolio.about', ['titre' => "A propos", 'experiences' => $experiences, 'diplomes' => $diplomes]);
     }
 
