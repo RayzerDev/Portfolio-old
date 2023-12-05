@@ -29,10 +29,10 @@
                             </div>
                         </div>
                     </div>
-        @endforeach
+                  @endforeach
             </div>
-                    @endforeach
                 @endif
+            @endforeach
         </div>
         @endif
     </div>
