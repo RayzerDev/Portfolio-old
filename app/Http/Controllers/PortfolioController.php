@@ -31,19 +31,21 @@ class PortfolioController extends Controller
      */
     public function skills()
     {
-        $competences = [];
-        $categories = [];
-        return view('portfolio.skills', ['titre' => "Compétences"]);
+        $urlAPI = env("API_PORTFOLIO_URL");
+        $competences = Http::get($urlAPI . "competences")->json()["products"];
+        $categories = Http::get($urlAPI . "competences/categories")->json()["products"];
+        return view('portfolio.skills', ['titre' => "Projets", 'competences' => $competences, 'categories' => $categories]);
     }
 
     /**
-     * Display projects
+     * Display projets
      */
-    public function projects()
+    public function projets()
     {
-        $projets = [];
-        $categories = [];
-        return view('portfolio.projects', ['titre' => "Projets"]);
+        $urlAPI = env("API_PORTFOLIO_URL");
+        $projets = Http::get($urlAPI . "projets")->json()["products"];
+        $categories = Http::get($urlAPI . "projets/categories")->json()["products"];
+        return view('portfolio.projets', ['titre' => "Projets", 'projets' => $projets, 'categories' => $categories]);
     }
 
     /**
