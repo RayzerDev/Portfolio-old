@@ -8,11 +8,11 @@
                 <div id="projects">
         @foreach($projets[$categorie] as $projet)
                     <div id="project">
-                        <img src={{"storage" . $projet["image"]}}>
+                        <img src={{"http://" . $hostImage . "/storage/" . $projet["image"]}}>
                         <div id="text">
                             <h3>{{$projet["nom"]}}</h3>
                             <p>{{$projet["description"]}}</p>
-                            <p><strong>Technos :</strong>{{$projet["techs"]}}</p>
+                            <p><strong>Technos : </strong>{{$projet["techs"]}}</p>
                             <div id="links">
                                 @if(isset($projet["previewLink"]))
                                     <div id="link">

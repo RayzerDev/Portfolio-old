@@ -8,7 +8,7 @@
                 <div id="cards">
                     @foreach($competences[$categorie] as $competence)
                         <div id="card">
-                            <img src="{{$competence["image"]}}">
+                            <img src="{{"http://" . $hostImage . "/storage/" . $competence["image"]}}">
                             <p>{{$competence["nom"]}}</p>
                         </div>
                     @endforeach
