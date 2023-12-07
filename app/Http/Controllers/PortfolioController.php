@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use http\Env;
+
 use Illuminate\Support\Facades\Http;
 
 class PortfolioController extends Controller{
-    public static $hostAPI = 'localhost:8888';
+    public static string $hostAPI = 'localhost:8888';
+    public static string $pathPortfolio =  '/api/portfolio/';
 
     /**
      * Display HomePage
@@ -21,7 +22,7 @@ class PortfolioController extends Controller{
      */
     public function about()
     {
-        $urlAPI = self::$hostAPI . '/api/portfolio/';
+        $urlAPI = self::$hostAPI . self::$pathPortfolio;
         $experiences = Http::get($urlAPI . "experiences")->json()["products"];
         $diplomes = Http::get($urlAPI . "diplomes")->json()["products"];
         return view('portfolio.about', ['titre' => "A propos", 'experiences' => $experiences, 'diplomes' => $diplomes]);
@@ -32,10 +33,11 @@ class PortfolioController extends Controller{
      */
     public function skills()
     {
-        $urlAPI = self::$hostAPI  . '/api/portfolio/';
+        $urlAPI = self::$hostAPI  . self::$pathPortfolio;
         $competences = Http::get($urlAPI . "competences")->json()["products"];
         $categories = Http::get($urlAPI . "competences/categories")->json()["products"];
-        return view('portfolio.skills', ['titre' => "Projets", 'competences' => $competences, 'categories' => $categories, 'hostImage' => self::$hostAPI] );
+        return view('portfolio.skills', ['titre' => "Projets", 'competences' => $competences,
+            'categories' => $categories, 'hostImage' => self::$hostAPI] );
     }
 
     /**
@@ -43,10 +45,11 @@ class PortfolioController extends Controller{
      */
     public function projets()
     {
-        $urlAPI = self::$hostAPI  . '/api/portfolio/';
+        $urlAPI = self::$hostAPI  . self::$pathPortfolio;
         $projets = Http::get($urlAPI . "projets")->json()["products"];
         $categories = Http::get($urlAPI . "projets/categories")->json()["products"];
-        return view('portfolio.projets', ['titre' => "Projets", 'projets' => $projets, 'categories' => $categories, 'hostImage' => self::$hostAPI]);
+        return view('portfolio.projets', ['titre' => "Projets", 'projets' => $projets,
+            'categories' => $categories, 'hostImage' => self::$hostAPI]);
     }
 
     /**

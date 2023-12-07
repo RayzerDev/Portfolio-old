@@ -18,8 +18,12 @@
             <li><a href="{{route('portfolio.contact')}}">Contact</a></li>
         </ul>
         <ul id="network">
-            <li><a href="https://www.github.com/RayzerDev"><img  src="{{asset("images/logo/github.svg")}}" alt="github"></a></li>
-            <li><a href="https://www.linkedin.com/in/louiskrmk/"><img  src="{{asset("images/logo/linkedin.svg")}}" alt="linkedin"></a></li>
+            <li><a href="https://www.github.com/RayzerDev">
+                    <img  src="{{asset("images/logo/github.svg")}}" alt="github">
+                </a></li>
+            <li><a href="https://www.linkedin.com/in/louiskrmk/">
+                    <img  src="{{asset("images/logo/linkedin.svg")}}" alt="linkedin">
+                </a></li>
         </ul>
     </div>
 </nav>

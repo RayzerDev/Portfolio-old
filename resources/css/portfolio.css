@@ -3,13 +3,15 @@
 body{
     background-color: #F5F5F5;
 }
+
 *{
     font-size: 1.02em;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins';
+    font-family: 'Poppins', serif;
     color: #171821;
 }
+
 nav{
     margin: 10px auto;
     width: 85%;
@@ -79,8 +81,7 @@ h3{
 #main{
     justify-content: space-between;
     align-items: center;
-    margin: auto;
-    margin-top: 8vh;
+    margin: 8vh auto auto;
     display:flex;
     width: 80%;
 }
@@ -108,7 +109,6 @@ h3{
 .baniere{
     justify-content:space-between;
     align-items: center;
-    margin: auto 5%;
     margin: 1em 2em;
 }
 #row-content > div{
