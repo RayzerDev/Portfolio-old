@@ -4,8 +4,8 @@ namespace App\Services;
 use Illuminate\Support\Facades\Http;
 
 class APIPortfolioService {
-    public static string $hostAPI = 'localhost:8888';
-    protected static string $pathPortfolio = '/api/portfolio/';
+    public static string $hostAPI = 'api.rayzerdev.fr';
+    protected static string $pathPortfolio = '/portfolio/';
 
     public function getExperiences(){
         $urlAPI = self::$hostAPI . self::$pathPortfolio;
