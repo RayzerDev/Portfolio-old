@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="{{asset("images/logo/logoWhite.png")}}" />
+    <link rel="icon" type="image/png" href="{{asset("images/logo/logo_icone.png")}}" />
     @vite(['resources/css/portfolio.css'])
     <title>{{$titre ?? "Portfolio"}}</title>
 </head>
