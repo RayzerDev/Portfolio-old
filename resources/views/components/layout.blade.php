@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="{{asset("images/logo/logoWhite.png")}}" />
     @vite(['resources/css/portfolio.css'])
     <title>{{$titre ?? "Portfolio"}}</title>
 </head>
@@ -14,7 +15,7 @@
         <ul id="button">
             <li><a href="{{route('portfolio.about')}}">À propos</a></li>
             <li><a href="{{route('portfolio.skills')}}">Compétences</a></li>
-            <li><a href="{{route('portfolio.projets')}}">Projets</a></li>
+            <li><a href="{{route('portfolio.projects')}}">Projets</a></li>
             <li><a href="{{route('portfolio.contact')}}">Contact</a></li>
         </ul>
         <ul id="network">

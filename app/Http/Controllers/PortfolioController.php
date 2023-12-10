@@ -41,7 +41,7 @@ class PortfolioController extends Controller
         $projets = $this->apiService->getProjets();
         $categories = $this->apiService->getProjetCategories();
 
-        return view('portfolio.projets', ['titre' => "Projets", 'projets' => $projets,
+        return view('portfolio.projects', ['titre' => "Projets", 'projets' => $projets,
             'categories' => $categories, 'hostImage' => $this->apiService::$hostAPI]);
     }
 
