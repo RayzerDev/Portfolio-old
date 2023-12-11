@@ -1,3 +1,7 @@
+ModPagespeed on
+ModPagespeedMapOriginDomain "http://portfolio.rayzerdev.fr:7080" "https://portfolio.rayzerdev.fr"
+ModPagespeedMapOriginDomain "http://www.portfolio.rayzerdev.fr:7080" "https://www.portfolio.rayzerdev.fr"
+ModPagespeedEnableFilters lazyload_images,remove_comments
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
