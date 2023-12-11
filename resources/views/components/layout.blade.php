@@ -2,7 +2,9 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="{{asset("images/logo/logo_icone.png")}}" />
+    <link rel="shortcut icon" href="https://portfolio.rayzerdev.fr/images/logo/logo_icone.png">
+
+    <!--<link rel="icon" type="image/png" href="{{asset("images/logo/logo_icone.png")}}" />-->
     @vite(['resources/css/portfolio.css'])
     <title>{{$titre ?? "Portfolio"}}</title>
 </head>
