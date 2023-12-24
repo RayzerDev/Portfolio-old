@@ -51,6 +51,10 @@ nav > div > a {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+}
+#button{
+    justify-content: center;
 }
 li > img {
     width: 50px;
