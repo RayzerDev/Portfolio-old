@@ -21,3 +21,4 @@ package-lock.json
 composer.lock
 /tmp
 .htaccess
+update.sh
