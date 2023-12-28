@@ -10,21 +10,21 @@
     100% {
         transform: translateX(0px);
         transform-origin: 50% 50%;
-        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc,
-        0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+        text-shadow: 0 1px 0 #26293d, 0 2px 0 #26293d, 0 3px 0 #26293d, 0 4px 0 #26293d, 0 5px 0 #26293d,
+        0 6px 0 #26293d, 0 7px 0 #26293d, 0 8px 0 #26293d, 0 9px 0 #26293d, 0 50px 30px rgba(0, 0, 0, 0.3);
     }
 }
 
 /* Directives communes */
 body{
-    background-color: #F5F5F5;
+    background-color: #171821;
 }
 *{
     font-size: 1.02em;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', serif;
-    color: #171821;
+    color: #e0d3d3;
 }
 
 /* Menu */
@@ -56,8 +56,9 @@ nav > div > a {
 #button{
     justify-content: center;
 }
-#nav-links img {
+li > a > img {
     width: 35px;
+    filter: invert(100%);
 }
 #nav-links li {
     margin: auto 10px;
@@ -81,7 +82,7 @@ li, a {
 /* Directives pour les titres */
 h1,h2{
     font-size: 4em;
-    color: #172243;
+    color: #3663DC;
     animation: text-pop-up-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
@@ -91,7 +92,7 @@ h2{
 }
 
 h3{
-    color: #172243;
+    color: #3663DC;
     font-size: 1.3em;
 }
 
@@ -142,7 +143,6 @@ hr{
     background-color: rgb(56, 131, 109);
     padding: 5px;
     border-radius: 10px;
-    color: white;
 }
 #foot > .info{
     display: flex;
@@ -193,19 +193,18 @@ hr{
     transform: scale(1.1);
 }
 #project > img{
-    display: block;
     width: 100%;
     height: 225px;
     margin: 0;
     padding: 0;
     border-radius: 5% 5% 0 0;
-    border: 1px solid #EBEBEB;
 }
 
+/* Directives le texte en dessous d'un projet */
 #text{
     display: flex;
     flex-direction: column;
-    background-color: #EBEBEB;
+    background-color: #383a4f;
     padding: 10px;
     border-radius: 0 0 10% 10%;
     height: 100%;
@@ -244,80 +243,4 @@ hr{
 /* Directives pour Contact */
 #infos{
     margin: 8vh auto auto;
-}
-
-/* Gestion du dark */
-
-/* Commune */
-body.dark *{
-    color: #e0d3d3;
-}
-body.dark {
-    background-color: #171821;
-    color: #e0d3d3;
-}
-
-/* Menu sombre */
-body.dark nav {
-    background-color: #171821;
-}
-
-body.dark #nav-links img,
-body.dark #link img{
-    filter: invert(100%);
-}
-
-/* Titres sombres */
-body.dark h1,
-body.dark h2,
-body.dark h3 {
-    color: #3663DC;
-}
-
-/* Banieres sombres */
-body.dark .baniere {
-    background-color: #171821;
-}
-
-/* Containers sombres */
-body.dark #container {
-    background-color: #171821;
-    color: #e0d3d3;
-}
-
-/* Accueil sombre */
-body.dark #main {
-    background-color: #171821;
-}
-
-/* Projets sombres */
-body.dark #project,
-body.dark #project:hover,
-body.dark #project > img,
-body.dark #text,
-body.dark #text > p,
-body.dark #text > p:last-of-type{
-    background-color: #383a4f;
-    color: #e0d3d3;
-    border: none;
-}
-
-/* Animation pour les titres */
-@keyframes text-pop-up-right-dark {
-    0% {
-        transform: translateX(50px);
-        transform-origin: 50% 50%;
-        text-shadow: none;
-    }
-    100% {
-        transform: translateX(0px);
-        transform-origin: 50% 50%;
-        text-shadow: 0 1px 0 #26293d, 0 2px 0 #26293d, 0 3px 0 #26293d, 0 4px 0 #26293d, 0 5px 0 #26293d,
-        0 6px 0 #26293d, 0 7px 0 #26293d, 0 8px 0 #26293d, 0 9px 0 #26293d, 0 50px 30px rgba(0, 0, 0, 0.3);
-    }
-}
-/* Titres sombres */
-body.dark h1,
-body.dark h2 {
-    animation: text-pop-up-right-dark 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }

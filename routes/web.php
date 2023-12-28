@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 use App\Http\Controllers\PortfolioController;
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,8 @@ Route::controller(PortfolioController::class) -> group(function (){
     Route::get('competences', 'skills')->name('portfolio.skills');
     Route::get('contact', 'contact')->name('portfolio.contact');
 });
+
+Route::post('/dark-mode', function () {
+    session(['darkMode' => !session('darkMode', false)]);
+    return redirect()->back();
+})->name('darkMode.toggle');
