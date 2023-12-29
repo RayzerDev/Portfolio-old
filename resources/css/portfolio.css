@@ -363,7 +363,7 @@ body.dark h2 {
 body.dark #download-button{
     background-color: #244bb2;
 }
-@media screen and (max-width: 1024px){
+@media (max-width: 1024px){
     /* Directives pour les titres */
     h2{
         font-size: 3.5em;
