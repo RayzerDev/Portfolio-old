@@ -88,7 +88,7 @@ h1,h2{
 
 h2{
     font-size: 2em;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 
 h3{
@@ -100,7 +100,7 @@ h3{
 .baniere{
     justify-content:space-between;
     align-items: center;
-    margin: 1em 2em;
+    margin-bottom: 1em;
 }
 
 /* Directive pour les containers du site */
@@ -148,6 +148,7 @@ hr{
 }
 #foot{
     margin-top: 5px;
+
 }
 #foot > .info{
     display: flex;
@@ -190,7 +191,7 @@ hr{
     justify-content: center;
 }
 #project{
-    width: 460px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     margin: 10px 0 30px 30px;
@@ -201,9 +202,7 @@ hr{
     transform: scale(1.1);
 }
 #project > img{
-    display: block;
     width: 100%;
-    height: 225px;
     margin: 0;
     padding: 0;
     border-radius: 5% 5% 0 0;
@@ -223,12 +222,13 @@ hr{
     margin: 10px 0 0;
 }
 #text > p, strong{
-    font-size: 1rem;
+    font-size: .8rem;
     text-align: justify;
 }
 #text > p:last-of-type{
     margin-top: auto;
     padding-top: 10px;
+    text-align: left;
 }
 
 /* Directives les liens d'un projet */
@@ -247,7 +247,7 @@ hr{
 }
 #link > a{
     margin: auto;
-    font-size: 1rem;
+    font-size: .7rem;
     text-decoration:underline;
 }
 
@@ -320,7 +320,6 @@ body.dark nav {
 
 body.dark #foot > .info > img,
 body.dark #nav-links img,
-body.dark #link img{
 body.dark #link img,
 body.dark button > img{
     filter: invert(100%);
@@ -384,90 +383,57 @@ body.dark h2 {
 body.dark #download-button{
     background-color: #244bb2;
 }
-@media (max-width: 1024px){
-    /* Directives pour les titres */
-    h2{
-        font-size: 3.5em;
-        margin-bottom: 1em;
-    }
-
-    h3{
-        color: #172243;
-        font-size: 1.5em;
-    }
+/* Directives responsivité */
+@media screen and (max-width: 1024px){
     /* Directives pour l'accueil */
     #main{
+        margin-top: 80px;
         justify-content: center;
-        width: 80%;
         flex-wrap: wrap;
     }
     #main  img{
-        width: 50%;
+        width: 60%;
+    }
+    h1{
+        font-size: 3em;
     }
 
-    #nav-links img {
-        width: 50px;
-    }
-
+    /* Directives pour le menu */
     #nav-links {
-        margin-top: 30px;
-        font-size: 1.9em;
+        margin: auto auto auto 10px;
     }
     #network {
         margin-top: 10px;
     }
-    /* A propos */
-    #row-content{
-        font-size: 1.7em;
-    }
-    /* Directives pour Compétences */
-    #card > img{
-        width: 210px;
-    }
-    #card > p{
-        font-size: 2em;
-    }
-    /* Directives pour Projets */
-    #project{
-        width: auto;
-        margin: 60px auto;
+    #logo-container > a{
+        margin: 0;
     }
 
+    /* Directives pour A Propos */
+    .baniere{
+        margin: 0 0 10px;
+    }
+    .info{
+        font-size: .7em;
+    }
+    #foot > .info:first-of-type{
+        margin-left: 0;
+    }
+    #foot > .info > img{
+        width: 15px;
+    }
+
+    /* Directives pour Projets */
+    #project{
+        margin: 0 auto 60px;
+    }
     #project > img{
         height: auto;
     }
-    #text {
-        padding: 25px;
-    }
-    #text > h3{
-        font-size: 2.5em;
-    }
-    #text > p, strong{
-        font-size: 1.8rem;
-    }
 
-    /* Directives les liens d'un projet */
-    #link > img{
-        width: 45px;
-        height: 45px;
-        margin: auto 5px auto auto;
-    }
-    #link > a{
-        font-size: 1.6rem;
-        margin: auto;
-    }
     /* Directives pour Contact */
-
-    #infos > h2{
+    #infos {
+        align-items: normal;
         font-size: 1.5em;
-    }
-    #infos h3{
-        font-size: 1.2em;
-    }
-    a > #download-button {
-        align-items: center;
-    }
-    #download-button > img{
-        width: 80px;
     }
 }
