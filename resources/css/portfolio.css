@@ -20,6 +20,7 @@ body{
     background-color: #F5F5F5;
 }
 *{
+    scroll-behavior: smooth;
     font-size: 1.02em;
     margin: 0;
     padding: 0;
@@ -283,6 +284,24 @@ hr{
     width: 50px;
     filter: invert();
 }
+a > #download-button {
+    align-items: center;
+}
+
+/* Directives bouton scroll */
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 3%;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+#scrollBtn img {
+    width: 50px;
+    height: 50px;
+}
 /* Gestion du dark */
 
 /* Commune */
@@ -302,6 +321,8 @@ body.dark nav {
 body.dark #foot > .info > img,
 body.dark #nav-links img,
 body.dark #link img{
+body.dark #link img,
+body.dark button > img{
     filter: invert(100%);
 }
 

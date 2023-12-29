@@ -37,6 +37,29 @@
         </ul>
     </div>
 </nav>
+<button onclick="scrollToTop()" id="scrollBtn" title="Go to top">
+    <img src="{{asset("images/icons/up.svg")}}" alt="buttonScroll">
+</button>
 {{$slot}}
 </body>
 </html>
+<script>
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        var scrollButton = document.getElementById("scrollBtn");
+
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            scrollButton.style.display = "block";
+        } else {
+            scrollButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
