@@ -32,6 +32,7 @@
                   @endforeach
             </div>
                 @endif
+            </div>
             @endforeach
         </div>
         @endif
