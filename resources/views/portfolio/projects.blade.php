@@ -8,7 +8,7 @@
                 <div id="projects">
         @foreach($projets[$categorie] as $projet)
                     <div id="project">
-                        <img src="{{"http://" . $hostImage . "/storage/" . $projet["image"]}}" alt="projet"/>
+                        <img src="{{"https://" . $hostImage . "/storage/" . $projet["image"]}}" alt="projet"/>
                         <div id="text">
                             <h3>{{$projet["nom"]}}</h3>
                             <p>{{$projet["description"]}}</p>
