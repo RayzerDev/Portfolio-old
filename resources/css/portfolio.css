@@ -138,15 +138,19 @@ hr{
     margin-left: auto;
 }
 #head > :last-child{
-    margin-left: auto;
+    margin-top: auto;
     background-color: rgb(56, 131, 109);
-    padding: 5px;
-    border-radius: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
     color: white;
+}
+#foot{
+    margin-top: 5px;
 }
 #foot > .info{
     display: flex;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 #foot > .info > img{
     width: 20px;
@@ -295,6 +299,7 @@ body.dark nav {
     background-color: #171821;
 }
 
+body.dark #foot > .info > img,
 body.dark #nav-links img,
 body.dark #link img{
     filter: invert(100%);
