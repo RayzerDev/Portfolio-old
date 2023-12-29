@@ -221,6 +221,9 @@ hr{
 #text > *{
     margin: 10px 0 0;
 }
+#text > h3{
+    margin: 0;
+}
 #text > p, strong{
     font-size: .8rem;
     text-align: justify;
