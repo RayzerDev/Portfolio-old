@@ -402,9 +402,6 @@ body.dark #download-button{
     }
 
     /* Directives pour le menu */
-    #nav-links {
-        margin: auto auto auto 10px;
-    }
     #network {
         margin-top: 10px;
     }
