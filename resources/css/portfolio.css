@@ -199,10 +199,10 @@ hr{
     justify-content: center;
 }
 #project{
-    width: 450px;
+    width: 460px;
     display: flex;
     flex-direction: column;
-    margin: 10px 0 30px 30px;
+    margin: 10px 0 30px 40px;
     border-radius: 50%;
     transition: transform 0.3s ease-in-out;
 }
