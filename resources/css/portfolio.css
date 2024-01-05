@@ -73,11 +73,18 @@ ul {
     justify-content: center;
     margin: auto;
 }
+#network{
+    flex-wrap: nowrap;
+}
 li, a {
     text-decoration: none;
 }
 #logo{
+    margin-top: auto;
     width: 150px;
+}
+#logo-container{
+    margin-top: 20px;
 }
 
 /* Directives pour les titres */
