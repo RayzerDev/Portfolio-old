@@ -260,7 +260,7 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px auto auto;
+    margin: 20px auto auto;
     font-size: 3em;
 }
 #infos > * {
@@ -434,7 +434,6 @@ body.dark #download-button{
 
     /* Directives pour Contact */
     #infos {
-        align-items: normal;
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 }
