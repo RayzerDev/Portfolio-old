@@ -192,7 +192,7 @@ hr{
     justify-content: center;
 }
 #project{
-    width: 350px;
+    width: 450px;
     display: flex;
     flex-direction: column;
     margin: 10px 0 30px 30px;
@@ -233,6 +233,7 @@ hr{
     margin-top: auto;
     padding-top: 10px;
     text-align: left;
+    font-size: 1rem;
 }
 
 /* Directives les liens d'un projet */
@@ -251,7 +252,7 @@ hr{
 }
 #link > a{
     margin: auto;
-    font-size: .7rem;
+    font-size: 1rem;
     text-decoration:underline;
 }
 
