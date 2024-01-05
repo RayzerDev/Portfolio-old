@@ -296,7 +296,7 @@ a > #download-button {
 #scrollBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 0;
     right: 3%;
     border: none;
     cursor: pointer;
