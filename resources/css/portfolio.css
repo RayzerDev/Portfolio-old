@@ -411,9 +411,6 @@ body.dark #download-button{
     }
 
     /* Directives pour A Propos */
-    .baniere{
-        margin: 0 0 10px;
-    }
     .info{
         font-size: .7em;
     }
