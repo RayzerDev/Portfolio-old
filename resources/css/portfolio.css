@@ -226,8 +226,7 @@ hr{
     margin: 0;
 }
 #text > p, strong{
-    font-size: .8rem;
-    text-align: justify;
+    text-align: center;
 }
 #text > p:last-of-type{
     margin-top: auto;
