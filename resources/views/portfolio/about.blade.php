@@ -77,7 +77,7 @@
             <p>Concernant le sport, je pratique du Jiu-Jitsu. J'ai déjà réalisé 2 compétitions régionales.
                 Je m'entraîne également à la salle de sport. J'aime jouer au foot avec mes amis, et supporter le RC Lens !</p>
             <p>Depuis très jeune, je suis plongé dans l'univers de la musique et j'en suis devenu guitariste. J'ai d'ailleurs fait quelques concerts.
-                C'est les Red Hot Chili Peppers qui m'ont inspiré, notamment John Frusciante.</p>
+                Les Red Hot Chili Peppers m'ont inspiré, notamment John Frusciante.</p>
             <p>Je joue pendant mes heures perdues sur l'ordinateur,
                 et quand me vient une idée je développe comme ce portfolio.</p>
         </div>
