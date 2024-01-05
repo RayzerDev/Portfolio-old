@@ -52,7 +52,6 @@ nav > div > a {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
 }
 #button{
     justify-content: center;
@@ -71,6 +70,8 @@ ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
 }
 li, a {
     text-decoration: none;
