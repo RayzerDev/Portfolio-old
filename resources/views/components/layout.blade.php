@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="shortcut icon" href="https://portfolio.rayzerdev.fr/images/logo/logo_icone.png">
 
-    @vite(['resources/css/portfolio.css'])
+    <link rel="stylesheet" href="{{asset("css/portfolio.css")}}"/>
     <title>{{$titre ?? "Portfolio"}}</title>
 </head>
 <body class="{{ session('darkMode') ? 'dark' : '' }}">

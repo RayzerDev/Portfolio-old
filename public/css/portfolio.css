@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Animation pour les titres */
+@keyframes text-pop-up-right {
+    0% {
+        transform: translateX(50px);
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+    100% {
+        transform: translateX(0px);
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc,
+        0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Directives communes */
+body{
+    background-color: #F5F5F5;
+}
+*{
+    scroll-behavior: smooth;
+    font-size: 1.02em;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', serif;
+    color: #171821;
+}
+
+/* Menu */
+nav{
+    margin: 10px auto;
+    width: 85%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > div {
+    display: flex;
+    align-items: center;
+}
+nav > div > a {
+    margin-right: auto;
+    margin-left: 2em;
+    width: 150px;
+}
+/* Boutons du menu */
+#nav-links {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#button{
+    justify-content: center;
+}
+#nav-links img {
+    width: 35px;
+}
+#nav-links li {
+    margin: auto 10px;
+    transition: transform 0.3s ease-in-out;
+}
+#nav-links li:hover {
+    transform: scale(1.1);
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+#network{
+    flex-wrap: nowrap;
+}
+li, a {
+    text-decoration: none;
+}
+#logo{
+    margin-top: auto;
+    width: 150px;
+}
+#logo-container{
+    margin-top: 20px;
+}
+
+/* Directives pour les titres */
+h1,h2{
+    font-size: 4em;
+    color: #172243;
+    animation: text-pop-up-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+h2{
+    font-size: 2em;
+    margin-bottom: .8em;
+}
+
+h3{
+    color: #172243;
+    font-size: 1.4em;
+}
+
+/* Directive pour les banieres du site */
+.baniere{
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+/* Directive pour les containers du site */
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: auto;
+}
+
+/* Directives pour l'accueil */
+#main{
+    justify-content: space-between;
+    align-items: center;
+    margin: 8vh auto auto;
+    display:flex;
+    width: 80%;
+}
+#main > img{
+    width: 40%;
+}
+
+/* Directives pour A Propos */
+#row-content > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 0.8em;
+}
+hr{
+    margin: 1em 0;
+}
+
+/* Directives pour A Propos */
+#row-content > div > :last-child{
+    margin-left: auto;
+}
+#head > :last-child{
+    margin-top: auto;
+    background-color: rgb(56, 131, 109);
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+    color: white;
+}
+#foot{
+    margin-top: 5px;
+
+}
+#foot > .info{
+    display: flex;
+    margin-left: 10px;
+}
+#foot > .info > img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+/* Directives pour Compétences */
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#card{
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+    margin: 0 10px 30px 30px;
+}
+#card:hover {
+    transform: scale(1.1);
+}
+
+#card > img{
+    width: 100px;
+    margin-bottom: auto;
+}
+#card > p{
+    padding-top: 5px;
+    text-align: center;
+}
+
+/* Directives pour Projets */
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#project{
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 30px 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+#project:hover {
+    transform: scale(1.1);
+}
+#project > img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 5% 5% 0 0;
+    border: 1px solid #EBEBEB;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    background-color: #EBEBEB;
+    padding: 15px;
+    border-radius: 0 0 10% 10%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#text > *{
+    margin: 10px 0 0;
+}
+#text > h3{
+    margin: 0;
+}
+#text > p, strong{
+    text-align: center;
+}
+#text > p:last-of-type{
+    margin-top: auto;
+    padding-top: 10px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+/* Directives les liens d'un projet */
+#links{
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+#link{
+    display: flex;
+}
+#link > img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+#link > a{
+    margin: auto;
+    font-size: 1rem;
+    text-decoration:underline;
+}
+
+/* Directives pour Contact */
+#infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto auto;
+    font-size: 3em;
+}
+#infos > * {
+    margin-bottom: 30px;
+}
+#infos > h2{
+    font-size: 1.2em;
+}
+#download-button{
+    display: flex;
+    background-color: #171821;
+    border-radius: 30px;
+    transition: .4s;
+    opacity: 1;
+}
+#download-button:hover {
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: 0.7;
+ }
+#download-button > * {
+    margin: 10px;
+    color: #F5F5F5;
+}
+#download-button > img{
+    width: 50px;
+    filter: invert();
+}
+a > #download-button {
+    align-items: center;
+}
+
+/* Directives bouton scroll */
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 3%;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+#scrollBtn img {
+    width: 50px;
+    height: 50px;
+}
+/* Gestion du dark */
+
+/* Commune */
+body.dark *{
+    color: #e0d3d3;
+}
+body.dark {
+    background-color: #171821;
+    color: #e0d3d3;
+}
+
+/* Menu sombre */
+body.dark nav {
+    background-color: #171821;
+}
+
+body.dark #foot > .info > img,
+body.dark #nav-links img,
+body.dark #link img,
+body.dark button > img{
+    filter: invert(100%);
+}
+
+/* Titres sombres */
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+    color: #3663DC;
+}
+
+/* Banieres sombres */
+body.dark .baniere {
+    background-color: #171821;
+}
+
+/* Containers sombres */
+body.dark #container {
+    background-color: #171821;
+    color: #e0d3d3;
+}
+
+/* Accueil sombre */
+body.dark #main {
+    background-color: #171821;
+}
+
+/* Projets sombres */
+body.dark #project,
+body.dark #project:hover,
+body.dark #project > img,
+body.dark #text,
+body.dark #text > p,
+body.dark #text > p:last-of-type{
+    background-color: #383a4f;
+    color: #e0d3d3;
+    border: none;
+}
+
+/* Animation pour les titres */
+@keyframes text-pop-up-right-dark {
+    0% {
+        transform: translateX(50px);
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+    100% {
+        transform: translateX(0px);
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #26293d, 0 2px 0 #26293d, 0 3px 0 #26293d, 0 4px 0 #26293d, 0 5px 0 #26293d,
+        0 6px 0 #26293d, 0 7px 0 #26293d, 0 8px 0 #26293d, 0 9px 0 #26293d, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+/* Titres sombres */
+body.dark h1,
+body.dark h2 {
+    animation: text-pop-up-right-dark 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* Bouton sombre */
+body.dark #download-button{
+    background-color: #244bb2;
+}
+/* Directives responsivité */
+@media screen and (max-width: 1024px){
+    /* Directives pour l'accueil */
+    #main{
+        margin-top: 80px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #main  img{
+        width: 60%;
+    }
+    h1{
+        font-size: 3em;
+    }
+
+    /* Directives pour le menu */
+    #network {
+        margin-top: 10px;
+    }
+    #logo-container > a{
+        margin: 0;
+    }
+
+    /* Directives pour A Propos */
+    .info{
+        font-size: .7em;
+    }
+    #foot > .info:first-of-type{
+        margin-left: 0;
+    }
+    #foot > .info > img{
+        width: 15px;
+    }
+
+    /* Directives pour Projets */
+    #project{
+        margin: 0 auto 60px;
+    }
+    #project > img{
+        height: auto;
+    }
+
+    /* Directives pour Contact */
+    #infos {
+        font-size: 1.4em;
+    }
+}
